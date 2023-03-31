@@ -1,0 +1,22 @@
+# X_train: ./X_train_augmented.npy
+# y_train: ./y_train_augmented.npy
+X_train: ./X_train.npy
+y_train: ./y_train.npy
+
+X_val: ./X_val.npy
+y_val: ./y_val.npy
+
+X_test: ./X_test.npy
+y_test: ./y_test.npy
+
+checkpoint: ./checkpoints/
+
+lr: 0.003
+batch_size: 256
+epoch: 500
+
+# model: EEGNet
+# model: Multi_EEGNet
+# model: ShallowConvNet
+# model: HR_EEGNet
+model: MSFNet

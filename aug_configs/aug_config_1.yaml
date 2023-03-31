@@ -1,0 +1,27 @@
+dataset: ./X_train.npy
+label: ./y_train.npy
+
+X_save_path: ./X_train_augmented.npy
+y_save_path: ./y_train_augmented.npy
+
+# smooth: 
+#   window_size: 11
+#   poly_degree: 3
+
+jitter: 
+  ratio: 0.8
+  loc: 0
+  sigma: 0.05
+
+scale: 
+  ratio: 0.8
+  loc: 0
+  sigma: 0.1
+
+downsample:
+  ratios: [0.08, 0.05, 0.04, 0.02]
+  factors: [2, 4, 5, 8]
+
+cutmean:
+  ratio: 0.8
+  factor: 0.1
